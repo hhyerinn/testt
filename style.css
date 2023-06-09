@@ -1,4 +1,40 @@
 @charset "UTF-8";
-.hidden{
-    display: none;
+*{ padding: 0; box-sizing: border-box; margin: 0 ; text-align: center;}
+*::before, 
+*::after{ margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #333;}
+ul, ol, li{ list-style: none;}
+img{ display: block; border: none; }
+
+html, body
+{height: 100%;}
+
+body
+{ display: table; margin: 0 auto;}
+
+
+.hidden{display: none; }
+img{
+    width: 100%; height: 100%; z-index: -1;
+    position: absolute; top: 0; left: 0; opacity: 0.7;
 }
+#clock{
+    background-color: #99999954;
+    display: flex; justify-content: center; align-items: center;
+    font: bold 80px 'inherit';
+    color: #fff; 
+}
+.box{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#quote{ display: flex; flex-direction: column; justify-content: center;
+    
+    vertical-align: middle}
+#quote span:nth-of-type(1){font: bold 30px/60px 'inherit';}
+#quote span:nth-of-type(2){font: 20px/40px 'inherit'; margin-bottom: 30px;}
+.todo{border-top: 1px solid #333; padding-top: 10px; margin-top: 30px;}
+
+.text{ width: 200px; height: 40px; margin-top: 30px; border: none; border-radius: 5px;  background-color: #ffffff8c}
+.submit{width: 70px; height: 40px; border: none; border-radius: 5px; background-color: #ddd;}

@@ -7,33 +7,38 @@
         <title>Moment App</title>
     </head>
     <body>
+        <div class="box">
+            <div id = "weather">
+                <span></span>
+                <span></span>
+            </div>
         <h2 id="clock">00:00:00</h2>
-        <form id="login_form" class="hidden">
-            <input
-            required
-            maxlength="15"
-            type="text" 
-            placeholder="what is your name?"
-            />
-            <input type="submit" value="login">
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input type="text" placeholder="Writh a To Do and Press Enter" required>
-        </form>
-        <ul id="todo-list"></ul>
         <div id="quote">
             <span></span>
             <span></span>
         </div>
 
+        <form id="login_form" class="hidden">
+            <input required maxlength="15" type="text" class="text" placeholder="what is your name?" />
+            <input type="submit" value="login" class="submit">
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <h2 class="todo">To Do List</h2>
+        <form id="todo-form">
+            <input type="text" class="text" placeholder="Writh a To Do and Press Enter" required>
+        </form>
+        <ul id="todo-list"></ul>
+        
+        </div>
 
 
 
-        <script src="greeting.js"></script>
-        <script src="clock.js"></script>
-        <script src="quotes.js"></script>
-        <script src="bgi.js"></script>
-        <script src="todo.js"></script>
+
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/bgi.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
     </body>
 </html>
